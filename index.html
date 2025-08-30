@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+           <h1>TIP CALCULATOR</h1>
+           <form>
+            <label for="bill_amount">Bill Amount</label>
+            <input type="text" id="bill_amount" autocomplete="off">
+            <label for="tip_percentage">Tip%</label>
+            <div class="tip_selection">
+                  <input type="text" list="tip_dropdown" autocomplete="off" id="tip_percentage">
+                 <datalist id="tip_dropdown">
+                 <option value="5">
+                 <option value="10" selected>
+                 <option value="15">
+                 <option value="20">
+                 </datalist>    
+            </div>
+            <label for="number_people">Number of People</label>
+            <input type="text" id="number_people" autocomplete="off">
+            <input type="submit" value="CALCULATE TIP" id="calculate_tip">
+           </form>
+           <div class="output-area">
+            <p>
+            <span>Tip Amount</span><span class="tip_amount">&#8377 0.00</span>
+            </p>
+            <p>
+            <span>Total</span><span class="total_amount">&#8377 0.00</span>
+            </p>
+            <p>
+            <span>Per Person</span><span class="per_person">&#8377 0.00</span>
+            </p>
+           </div>
+    </div>
+</body>
+</html>
